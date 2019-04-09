@@ -1,0 +1,47 @@
+@import "colors.css";
+@import "normalize.css";
+@import "fonts/fonts";
+
+%img-cover {
+  object-fit: cover;
+  object-position: top;
+  font-family: 'object-fit: cover; object-position: top;';
+}
+
+$main-margins: 40px;
+$font: 'Roboto-Regular';
+$fontBold: 'Roboto-Bold';
+$fontAccent: 'LeagueGothic';
+
+$bgColor: var(--bg-color);
+$fontColor: var(--font-color);
+$fontAccentColor: var(--accent-font-color);
+
+html {
+  font-size: 10px;
+}
+html, body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body {
+  background: $bgColor;
+  min-width: 320px;
+  font-family: $font;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+@import "common/common";
+@import "sprite/sprite";
+@import "header/header";
+@import "footer/footer";
+@import "main-page/main-page";
+@import "place-block/place-block";
+@import "map-block/map-block";
+@import "little-block/little-block";
+@import "mailing/mailing";
+@import "lineup/lineup";
+
+
+

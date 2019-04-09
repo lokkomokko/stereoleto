@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+  color: $fontColor;
+}
+@for $i from 0 through 10 {
+  .order-#{$i} {
+    order: #{$i};
+  }
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.main {
+  padding: 0 40px;
+  position: relative;
+  flex: 1;
+}
+.order-unset {
+  order: unset;
+}
+
+.link {
+  border-bottom: 1px solid $bgColor;
+  padding-bottom: 3px;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.title {
+  font-family: $fontAccent;
+  font-size: 30px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: $fontColor;
+}
+.text-block {
+  &__text {
+    font-size: 18px;
+    line-height: 25px;
+    color: $fontColor;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}

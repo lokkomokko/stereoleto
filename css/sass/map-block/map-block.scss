@@ -1,0 +1,20 @@
+.map-block {
+  margin-top: 90px;
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 1660px) {
+  .map-block {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .map-block {
+    margin-top: 30px;
+  }
+}

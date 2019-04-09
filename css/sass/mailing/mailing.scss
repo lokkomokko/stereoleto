@@ -1,0 +1,144 @@
+.mailing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 55px;
+  a {
+    text-decoration: underline;
+  }
+  &__btn {
+    border: none;
+    width: 67px;
+    height: 67px;
+    min-width: 67px;
+    min-height: 67px;
+    border-radius: 100px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-right: 0 !important;
+    transition: .3s;
+    .icon {
+      position: relative;
+      top: -3px;
+      fill: $fontColor;
+      transition: .3s;
+    }
+    &:hover {
+      background: $fontColor;
+      .icon {
+        fill: #fff;
+      }
+    }
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 390px;
+    &-form {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    input {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      border-bottom: 1px solid $fontColor;
+      padding-bottom: 7px;
+      margin-bottom: 14px;
+      border-right: 0 !important;
+
+      &::placeholder {
+        color: $fontColor;
+        transition: .3s;
+      }
+      &:focus {
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &__title {
+    font-family: $fontAccent;
+    font-size: 30px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: $fontColor;
+    margin-bottom: 20px;
+  }
+}
+
+
+.round {
+  position: relative;
+  font-size: 12px;
+  input {
+    margin-right: 10px;
+  }
+
+}
+
+.round label {
+  background-color: transparent;
+  border: 1px solid $fontColor;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width:14px;
+
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 6px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+.round label:after {
+  border: none;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-45deg);
+  width: 6px;
+  background: $fontColor;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .mailing {
+    margin-top: 40px;
+  }
+}
