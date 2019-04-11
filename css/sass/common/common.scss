@@ -39,7 +39,9 @@ a {
     font-size: 18px;
     line-height: 25px;
     color: $fontColor;
-    white-space: pre-line;
+    p {
+      white-space: pre-line;
+    }
   }
   &__title {
     margin-bottom: 20px;

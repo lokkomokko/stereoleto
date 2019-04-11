@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Стереолето</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="scroll-body">  <!--На страницах кроме главной подключать этот класс (нужен для сокрытия шапки)-->
+<header class="header">
+    <div class="header__top">
+            <video autoplay poster="img/top.png" loop muted></video>
+    </div>
+
+    <div class="header__bottom">
+        <div class="header__bottom-logo">
+            <div class="header__mobile-menu-toggle" id="mobile-menu-toggle">
+                <svg class="header-mobile-menu--close-icon">
+                    <use xlink:href="img/sprite.symbol.svg#menu"></use>
+                </svg>
+                <svg class="header-mobile-menu--open-icon icon icon-arrowL">
+                    <use xlink:href="img/sprite.symbol.svg#arrowL"></use>
+                </svg>
+            </div>
+            <a href="/">
+                <svg>
+                    <use xlink:href="img/sprite.symbol.svg#logo"></use>
+                </svg>
+            </a>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a href="">О фестивале</a></li>
+                <li class="header__menu-list-item"><a href="">Участники</a></li>
+                <li class="header__menu-list-item"><a href="">Пространство</a></li>
+                <li class="header__menu-list-item"><a href="">Новости</a></li>
+                <li class="header__menu-list-inner inner-list-wrap">
+                    <span class="header__menu-list-dots inner-list-wrap__trigger">...</span>
+                    <ul>
+                        <li><a href="">Партнеры</a></li>
+                        <li><a href="">Вопросы и ответы</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Аккредитация</a></li>
+                        <li><a href="">Регистрация артистов</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__social">
+            <ul>
+                <li class="header__social-item">
+                    <a href="" title="vkontakte">
+                        <svg class="icon icon-vk">
+                            <use xlink:href="img/sprite.symbol.svg#vk"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="" title="facebook">
+                        <svg class="icon icon-fb">
+                            <use xlink:href="img/sprite.symbol.svg#fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="" title="instagram">
+                        <svg class="icon icon-in">
+                            <use xlink:href="img/sprite.symbol.svg#in"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="" title="twitter">
+                        <svg class="icon icon-tw">
+                            <use xlink:href="img/sprite.symbol.svg#tw"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a href="" title="youtube">
+                        <svg class="icon icon-you">
+                            <use xlink:href="img/sprite.symbol.svg#you"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header__lang-switch">
+                <a class="header__lang-switch--current" href="/">ру</a>
+                <span>/</span>
+                <a href="">en</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom-text">
+        <p>6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <div class="header-mobile-menu">
+        <ul class="header-mobile-menu__nav">
+            <li class="order-1 order-unset">
+                <a href="">о фестивале</a>
+            </li>
+            <li class="order-4 order-unset">
+                <a href="">новости</a>
+            </li>
+            <li class="order-7 order-unset">
+                <a href="">контакты</a>
+            </li>
+            <li class="order-2 order-unset">
+                <a href="">участники</a>
+            </li>
+            <li class="order-5 order-unset">
+                <a href="">партнеры</a>
+            </li>
+            <li class="order-6 order-unset">
+                <a href="">аккредитация</a>
+            </li>
+            <li class="order-3 order-unset">
+                <a href="">пространство</a>
+            </li>
+            <li class="order-9 order-unset">
+                <a href="">вопросы и ответы</a>
+            </li>
+            <li class="order-8 order-unset">
+                <a href="">регистрация артистов</a>
+            </li>
+            <li class="order-10 header__lang-switch--mobile">
+                <a class="header__lang-switch--current" href="/">ру</a>
+                <span>/</span>
+                <a href="">en</a>
+            </li>
+        </ul>
+        <ul class="header-mobile-menu__social">
+            <li>
+                <a href="">
+                    <svg class="icon icon-vk">
+                        <use xlink:href="img/sprite.symbol.svg#vk"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg class="icon icon-fb">
+                        <use xlink:href="img/sprite.symbol.svg#fb"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg class="icon icon-in">
+                        <use xlink:href="img/sprite.symbol.svg#in"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg class="icon icon-tw">
+                        <use xlink:href="img/sprite.symbol.svg#tw"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg class="icon icon-you">
+                        <use xlink:href="img/sprite.symbol.svg#you"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main">
+    <a href="" class="buy-button" id="buy-button">
+        <div class="buy-button__circle-text buy-button__circle-text--top">   До фестиваля — 28 дней   </div>
+        <div class="buy-button__circle-text buy-button__circle-text--bottom">   До фестиваля — 28 дней   </div>
+        <span class="buy-button__center-text">Купить билет</span>
+    </a>
+    <div class="container">
+        <section class="answers">
+            <h1 class="page-title answers__top-title">Вопросы и ответы</h1>
+            <div class="answers__wrap">
+                <div class="answers__left">
+                    <div class="answers__block">
+                        <div class="text-block__text">
+                            <p>Мы рады, что вы выбираете Tinkoff Stereoleto, а также — что вы задаете вопросы. Вот ответы на самые популярные из них, если вашего вопроса здесь нет, смело пишите нам в социальные сети, мы обязательно подскажем.</p>
+                        </div>
+                    </div>
+                    <div class="answers__block">
+                        <h2 class="answers__title">На фестиваль запрещено проносить:</h2>
+                        <div class="text-block__text">
+                            <p>• огнестрельное, газовое, пневматическое, холодное оружие и иные колюще-режущие предметы, иными словами, всё, что может нанести другим посетителям вред, в том числе непредна- меренный;
+                                • любые напитки и еду, кроме детского питания
+                                осуществлять фото- и видеосъемку на профессиональную аппаратуру;
+                                • свою еду (исключение составляет детское питание).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="answers__block">
+                        <h2 class="answers__title">Так же просим вас:</h2>
+                        <div class="text-block__text">
+                            <p>• не мусорить (пожалуйста, выкидывайте мусор в специально отведенные контейнеры);
+                                • с уважением относиться к другим посетителям фестиваля, а также к охране и персоналу;
+                                • бережно относиться к природе.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers__right">
+                    <div class="answers-accordion">
+                        <div class="answers-accordion__top">
+                            <h3 class="answers-accordion__title">Можно ли купить билеты на месте?</h3>
+                            <span class="answers-accordion__arrow"></span>
+                        </div>
+                        <div class="answers-accordion__text text-block__text">
+                            <p>Да, конечно, на месте их будет продавать Kassir.ru, можно будет оплатить и картой, и наличными.</p>
+                        </div>
+                    </div>
+                    <div class="answers-accordion">
+                        <div class="answers-accordion__top">
+                            <h3 class="answers-accordion__title">Можно ли прийти на фестиваль всей семьей?</h3>
+                            <span class="answers-accordion__arrow"></span>
+                        </div>
+                        <div class="answers-accordion__text text-block__text">
+                            <p>Да, конечно, на месте их будет продавать Kassir.ru, можно будет оплатить и картой, и
+                                наличными. Да, конечно, на месте их будет продавать Kassir.ru, можно будет оплатить и
+                                картой, и наличными. Да, конечно, на месте их будет продавать Kassir.ru, можно будет
+                                оплатить и картой, и наличными. Да, конечно, на месте их будет продавать Kassir.ru,
+                                можно будет оплатить и картой, и наличными.
+                                Да, конечно, на месте их будет продавать Kassir.ru, можно будет оплатить и картой, и
+                                наличными.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="answers-accordion">
+                        <div class="answers-accordion__top">
+                            <h3 class="answers-accordion__title">Можно ли снимать на фестивале на фото- и
+                                видео-аппаратуру?</h3>
+                            <span class="answers-accordion__arrow"></span>
+                        </div>
+                        <div class="answers-accordion__text text-block__text">
+                            <p>Да, конечно, на месте их будет продавать Kassir.ru, можно будет оплатить и картой, и
+                                наличными.</p>
+                        </div>
+                    </div>
+                    <div class="answers-accordion">
+                        <div class="answers-accordion__top">
+                            <h3 class="answers-accordion__title">Можно ли снимать на фестивале на фото- и
+                                видео-аппаратуру?</h3>
+                            <span class="answers-accordion__arrow"></span>
+                        </div>
+                        <div class="answers-accordion__text text-block__text">
+                            <p>Да, конечно, на месте их будет продавать Kassir.ru, можно будет оплатить и картой, и
+                                наличными.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer>
+    <div class="footer">
+        <div class="footer__logo">
+            <img src="img/light-music-logo.png" alt="Логотип 'Светлая музыка'">
+        </div>
+        <nav class="footer__nav">
+            <ul>
+                <li><a class="link" href="">О фестивале</a></li>
+                <li><a class="link" href="">Участники</a></li>
+                <li><a class="link" href="">Пространство</a></li>
+                <li><a class="link" href="">Новости</a></li>
+                <li><a class="link" href="">Партнеры</a></li>
+                <li><a class="link" href="">Вопросы и ответы</a></li>
+                <li><a class="link" href="">Контакты</a></li>
+                <li><a class="link" href="">Аккредитация</a></li>
+                <li><a class="link" href="">Регистрация артистов</a></li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <ul>
+                <li>
+                    <a href="">
+                        <svg class="icon icon-vk">
+                            <use xlink:href="img/sprite.symbol.svg#vk"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="icon icon-fb">
+                            <use xlink:href="img/sprite.symbol.svg#fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="icon icon-in">
+                            <use xlink:href="img/sprite.symbol.svg#in"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="icon icon-tw">
+                            <use xlink:href="img/sprite.symbol.svg#tw"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg class="icon icon-you">
+                            <use xlink:href="img/sprite.symbol.svg#you"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <p class="footer__contacts-row">© СТЕРЕОЛЕТО 2002—2019</p>
+            <a class="footer__contacts-row link" href="mailto:info@light-music.ru">info@light-music.ru</a>
+            <a class="footer__contacts-row" href="tel:78123274236">+7 (812) 327-42-36</a>
+            <p class="footer__contacts-row footer__contacts-row--x4">Дизайн сайта: <a class="link" href="">x4.digital</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/lettering/jquery.lettering.js"></script>
+<script src="js/vendor/svg4everybody/svg4everybody.min.js"></script>
+<script src="js/vendor/objectfit-polyfill/ofi.min.js"></script>
+<script src="js/vendor/sticky-kit/sticky-kit.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

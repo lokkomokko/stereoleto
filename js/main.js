@@ -158,6 +158,19 @@ $(document).ready(function () {
             $('.space__tab[data-id="'+id+'"]').removeClass('hidden')
         })
     }
+
+    var accordions = $('.answers-accordion__top');
+    if (accordions.length) {
+        accordions.click(function () {
+            var item = $(this).parent();
+            item.toggleClass('answers-accordion--active');
+            var is_open = item.hasClass('answers-accordion--active');
+            var innerList = item.find('.answers-accordion__text');
+            var innerHeight = item.find('.answers-accordion__text p').outerHeight(true);
+            var height = is_open ? innerHeight + 'px' : 0;
+            innerList.css('max-height', height);
+        })
+    }
     objectFitImages();
     svg4everybody()
 });

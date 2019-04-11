@@ -7,7 +7,22 @@
   object-position: top;
   font-family: 'object-fit: cover; object-position: top;';
 }
+%scrollbar {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: #F5F5F5;
+  }
 
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+  }
+}
 $main-margins: 40px;
 $font: 'Roboto-Regular';
 $fontBold: 'Roboto-Bold';
@@ -53,4 +68,7 @@ body {
 @import "new/new";
 @import "news/news";
 @import "partners/partners";
-
+@import "answers/answers";
+@import "contacts/contacts";
+@import "text-page/text-page";
+@import "after-fest/after-fest";

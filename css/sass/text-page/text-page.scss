@@ -1,0 +1,38 @@
+.text-page {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-top: 70px;
+  &__text {
+    a {
+      font-family: $fontBold;
+      text-decoration: underline;
+      transition: .2s ease-in-out;
+      &:hover {
+        color: $fontAccentColor;
+        text-decoration: none;
+      }
+    }
+  }
+  &__form {
+    margin: 0 -8px;
+    margin-top: 50px;
+    iframe {
+      width: 100%;
+    }
+  }
+}
+.text-block__text--center {
+  text-align: center;
+  margin: 0 15px;
+}
+@media screen and (max-width: 960px) {
+  .text-page {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-page {
+    margin-top: 30px;
+  }
+}

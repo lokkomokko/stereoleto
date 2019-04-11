@@ -1,0 +1,115 @@
+.answers {
+  margin-top: 70px;
+  padding: 0 117px;
+  &__right {
+    width: 40%;
+  }
+  &__left {
+    margin-right: 10%;
+    width: 50%;
+  }
+  &__wrap {
+    display: flex;
+  }
+  &__top-title {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+.answers__title {
+  font-family: $fontAccent;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.answers__block {
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+}
+.answers-accordion {
+  border-top: 10px solid $fontColor;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  &--active {
+    .answers-accordion__title {
+      color: $fontAccentColor;
+    }
+    .answers-accordion__arrow {
+      transform: rotate(0);
+    }
+  }
+  &__top {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &:hover {
+      .answers-accordion__title {
+        color: $fontAccentColor;
+      }
+    }
+  }
+  &__title {
+    font-family: $fontAccent;
+    font-size: 24px;
+    line-height: 25px;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+  }
+  &__arrow {
+    width: 13px;
+    min-width: 13px;
+    margin-left: 10px;
+    height: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.1768 8.01909L15.3536 8.19586L15.1768 8.37264L14.3731 9.17627L14.1964 9.35305L14.0196 9.17627L7.05477 2.21145L6.87799 2.03468L7.05477 1.8579L7.8584 1.05427L8.03518 0.877489L8.21196 1.05427L15.1768 8.01909Z' fill='white' stroke='white' stroke-width='0.5'/%3E%3Cpath d='M2.05186 9.16984L1.88203 9.35329L1.69857 9.18345L0.864581 8.41137L0.681127 8.24154L0.850963 8.05808L7.54235 0.830164L7.71218 0.646709L7.89564 0.816546L8.72963 1.58863L8.91308 1.75847L8.74325 1.94192L2.05186 9.16984Z' fill='white' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .2s;
+    transform: rotate(180deg);
+  }
+  &__text {
+    max-height: 0;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .answers {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .answers {
+    margin-top: 50px;
+    &__left {
+      width: 50%;
+      margin-right: 5%;
+    }
+    &__right {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .answers {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    &__right {
+      width: 100%;
+    }
+  }
+}
