@@ -4,6 +4,9 @@
   padding: 0 157px;
   &__text {
     margin-top: 30px;
+    .text-block__text {
+      white-space: inherit;
+    }
   }
   img {
     width: 100%;
@@ -11,11 +14,11 @@
     @extend %img-cover;
   }
   &__right {
-    flex: 6;
+    width: 60%;
     margin-left: 84px;
   }
   &__left {
-    flex: 4;
+    width: 40%;
     border-top: 10px solid #12226D;
   }
   &__bordered-img {
@@ -34,6 +37,9 @@
   &__place-img {
     border-radius: 20px;
     overflow: hidden;
+    height: 26vw;
+    max-height: 500px;
+    width: 100%;
   }
   &__how {
     margin-top: 30px;
@@ -104,10 +110,12 @@
 
   .place-block__right {
     margin-left: 40px;
-    flex: 2;
+    width: 30%;
+    flex-basis: calc(60% - 40px);
   }
   .place-block__left {
-    flex: 1;
+    width: 40%;
+    min-width: 541px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -130,6 +138,22 @@
   .place-block__right {
     margin-left: 0;
     margin-top: 55px;
+  }
+  .place-block__right {
+    margin-left: 0px;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .place-block__left {
+    width: 100%;
+    min-width: auto;
+  }
+  .place-block__place-img {
+    height: 50vw;
+    max-height: 620px;
+  }
+  .place-block__how {
+    max-width: none;
   }
 }
 

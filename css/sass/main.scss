@@ -30,8 +30,11 @@ body {
   font-family: $font;
   font-size: 16px;
   display: flex;
+  color: $fontColor;
   flex-direction: column;
 }
+@import "slick/slick-theme";
+@import "slick/slick";
 @import "common/common";
 @import "sprite/sprite";
 @import "header/header";
@@ -42,6 +45,12 @@ body {
 @import "little-block/little-block";
 @import "mailing/mailing";
 @import "lineup/lineup";
-
-
+@import "article/article";
+@import "about/about";
+@import "archive/archive";
+@import "artists/artists";
+@import "space/space";
+@import "new/new";
+@import "news/news";
+@import "partners/partners";
 

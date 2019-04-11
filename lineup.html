@@ -10,7 +10,7 @@
 <body>
 <header class="header">
     <div class="header__top">
-        <img src="img/top.png" alt="">
+        <video autoplay poster="img/top.png" loop muted></video>
     </div>
 
     <div class="header__bottom">
@@ -630,8 +630,10 @@
                 </div>
             </div>
             <div class="place-block__right">
-                <div class="place-block__place-img">
+                <div class="place-block__place-img slider">
                     <img src="img/test-img-1.jpg" alt="Фото здания (место проведения)">
+                    <img src="img/test-img-3.jpg" alt="фото для слайдера">
+                    <img src="img/test-img-4.jpg" alt="фото для слайдера">
                 </div>
                 <div class="place-block__how">
                     <h4 class="place-block__how-title title">КАК ДОБРАТЬСЯ:</h4>
@@ -641,17 +643,17 @@
                         <li data-id="3">Общественным транспортом</li>
                     </ul>
                     <span class="place-block__how-mobile-current"><p>Официальный трансфер</p>
-                    <ul class="place-block__how-mobile-list">
-                        <li data-id="1">Официальный трансфер</li>
-                        <li data-id="2">На автомобиле</li>
-                        <li data-id="3">Общественным транспортом</li>
-                    </ul>
-                </span>
+                        <ul class="place-block__how-mobile-list">
+                            <li data-id="1">Официальный трансфер</li>
+                            <li data-id="2">На автомобиле</li>
+                            <li data-id="3">Общественным транспортом</li>
+                        </ul>
+                    </span>
 
                     <div class="place-block__how_text">
                         <p class="place-block__how_text-item text-block__text place-block__how_text-1" data-id="1">Год назад в Петербурге, в Гавани Васильевского острова, на территории исторического кабельного завода Siemens & Halske появилось новое общественное пространство «Порт Севкабель». Целый год проект функционировал в полузакрытом режиме, открываясь (в основном по выходным) только под различные события — крупные музыкальные фестивали (Present Perfect, Urban Culture Festival и т.д.) ярмарки и выставки.</p>
-                        <p class="place-block__how_text-item text-block__text place-block__how_text-2 place-block__how_text--hidden" data-id="2">Второе описание</p>
-                        <p class="place-block__how_text-item text-block__text place-block__how_text-3 place-block__how_text--hidden" data-id="3">Третье описание</p>
+                        <p class="place-block__how_text-item text-block__text place-block__how_text-2 hidden" data-id="2">Второе описание</p>
+                        <p class="place-block__how_text-item text-block__text place-block__how_text-3 hidden" data-id="3">Третье описание</p>
                     </div>
                 </div>
             </div>
@@ -782,6 +784,7 @@
 <script src="js/vendor/svg4everybody/svg4everybody.min.js"></script>
 <script src="js/vendor/objectfit-polyfill/ofi.min.js"></script>
 <script src="js/vendor/sticky-kit/sticky-kit.min.js"></script>
+<script src="js/vendor/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

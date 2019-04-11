@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 55px;
+  margin-top: 90px;
   a {
     text-decoration: underline;
   }
@@ -140,5 +140,10 @@
 @media screen and (max-width: 960px) {
   .mailing {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .round {
+    display: flex;
   }
 }

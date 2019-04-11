@@ -39,8 +39,57 @@ a {
     font-size: 18px;
     line-height: 25px;
     color: $fontColor;
+    white-space: pre-line;
   }
   &__title {
     margin-bottom: 20px;
   }
+}
+.slider {
+  .slick-list, .slick-track {
+    height: 100%;
+  }
+  .slick-prev {
+    //background: red;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    height: auto;
+    transform: none;
+    cursor:url("data:image/svg+xml,%3Csvg width='65' height='44' viewBox='0 0 65 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23 1L2 22M2 22L23 43M2 22H65' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A"), auto;
+    &:before {
+      display: none;
+    }
+  }
+  .slick-next {
+    //background: red;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    height: auto;
+    transform: none;
+    cursor:url("data:image/svg+xml,%3Csvg width='65' height='44' viewBox='0 0 65 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42 43L63 22M63 22L42 1M63 22L-1.83588e-06 22' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A"), auto;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.page-title {
+  font-family: $fontAccent;
+  font-size: 48px;
+  line-height: .95em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }

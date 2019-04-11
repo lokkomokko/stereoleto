@@ -115,7 +115,7 @@ a.lineup-item {
     .lineup-item__img {
       opacity: 1;
       transform: translateY(-50%) scale(.9);
-      transition: .2s linear  ;
+      transition: .2s ease-in-out  ;
     }
     .main-block__artists-list-arrow {
       color: #fff;

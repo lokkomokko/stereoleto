@@ -9,7 +9,7 @@
 <body class="scroll-body">  <!--На страницах кроме главной подключать этот класс (нужен для сокрытия шапки)-->
 <header class="header">
     <div class="header__top">
-        <img src="img/top.png" alt="">
+        <video autoplay poster="img/top.png" loop muted></video>
     </div>
 
     <div class="header__bottom">
@@ -177,8 +177,50 @@
         <span class="buy-button__center-text">Купить билет</span>
     </a>
     <div class="container">
+        <section class="article article--artist">
+            <div class="article__col article__col-left">
+                <div class="article__back-link arrow-title-wrap arrow-title-wrap--reverse">
+                    <a class="arrow-title" href="">
+                        все участники (50)
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+                <div class="article__img">
+                    <img src="img/test-img-1.jpg" alt="Фото артиста">
+                </div>
+            </div>
+            <div class="article__col article__col-right">
+                <p class="article__date">6 июля</p>
+                <h1 class="article__artist-title">RAG`N`BONE MAN MAN MAN</h1>
+                <div class="article__text">В далеком 1997, когда Мумий Тролль ворвался на отечественную сцену, в российской рок-тусовке царило серое уныние. Это был настоящий глоток свежего воздуха, полный самого отвязного драйва, граничащего с безумием. Сегодня, спустя 20 с лишним лет, Илья Лагутенко со своей командой продолжает собирать многотысячные залы с поразительным драйвом и сокрушительными по звуку концертами. Необузданная энергия раннего Мумий Тролля никуда не исчезла, она по-прежнему здесь, а поклонников группы только прибавилось – это и те, чья молодость прошла в нулевых, и совершенно новое поколение, подхватывающее старые и новые хиты на ура. Группа никогда не боялась экспериментировать со звучанием: в результате, в обойме у Мумий Тролля и яростное гитарное инди, и интересная электроника и просто берущие за душу треки, ставшие уже родными множеству людей. </div>
+            </div>
+        </section>
+        <div class="article article--video">
+            <div class="article__col article__col-left">
+                <iframe  src="https://www.youtube.com/embed/DyDfgMOUjCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="article__col article__col-right">
+                <div class="mailing">
+                    <h5 class="mailing__title">• ПОЛУЧАТЬ НОВОСТИ •</h5>
+                    <form class="mailing__input-form">
+                        <div class="mailing__input">
+                            <input type="email" placeholder="E-mail">
+                            <div class="round">
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox"></label>
+                                Я согласен с <a href="">политикой конфиденциальности</a>
+                            </div>
 
-
+                        </div>
+                        <button class="mailing__btn" type="submit">
+                            <svg class="icon icon-mail">
+                                <use xlink:href="img/sprite.symbol.svg#mail"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 

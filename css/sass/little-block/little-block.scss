@@ -4,8 +4,7 @@
   display: flex;
   justify-content: space-between;
   &__item {
-    padding: 30px 0;
-    border-top: 10px solid $fontColor;
+    padding: 0 0 30px;
     width: calc(100% /3 - 80px);
     display: flex;
     flex-direction: column;
@@ -41,6 +40,9 @@
     text-transform: uppercase;
     color: $fontColor;
     transition: .3s;
+    border-top: 10px solid $fontColor;
+    padding-top: 30px;
+
 
   }
 }
@@ -61,16 +63,17 @@
   }
 }
 @media screen and (max-width: 740px) {
-  .little-block__item {
-    width: 100%;
+  .little-block__name {
+    border-top: 5px solid $fontColor;
+    padding-top: 22px;
   }
   .little-block {
     flex-direction: column;
   }
   .little-block__item {
-    border-top: 5px solid $fontColor;
+    width: 100%;
+
     margin-bottom: 10px;
-    padding-top: 22px;
   }
 
 }

@@ -1,21 +1,31 @@
 window.onbeforeunload = function () {
     if (document.querySelector('body').classList.contains('scroll-body')) {
-        window.scrollTo(0, 300);
+        var ratio = window.innerWidth <= 600 ? 3.3 : 4.6;
+        window.scrollTo(0, window.innerWidth / ratio);
     }
 };
 
 $(document).ready(function () {
 
-
     var body = $('body');
     var html = $('html');
 
     if (body.hasClass('scroll-body')) {
+        var ratio = window.innerWidth <= 600 ? 3.3 : 4.6;
+
         setTimeout(function () {
-            window.scrollTo(0, 300);
-            $(this).scrollTop(300);
+            window.scrollTo(0, window.innerWidth / ratio);
+            $(this).scrollTop(window.innerWidth / ratio);
         }, 10)
     }
+    var mainVideo = $('.header__top video');
+
+    if ($(window).width() <= 600 ) {
+        mainVideo.append("<source type='video/mp4' src='" + 'img/stereo_header_600.mp4' + "' />");
+    } else {
+        mainVideo.append("<source type='video/mp4' src='" + 'img/stereo_header.mp4' + "' />");
+    }
+
 
     var scrollingText = $('.header__bottom-text')
     var current_width = scrollingText.width(),
@@ -58,6 +68,11 @@ $(document).ready(function () {
         }
     });
 
+
+    var slider = $('.slider');
+    if (slider.length) {
+        slider.slick()
+    }
 
     $('.buy-button__circle-text').lettering();
 
@@ -106,15 +121,15 @@ $(document).ready(function () {
         offset_top: offset_top
     });
 
-    if ($('.place-block__how-mobile-current').length) {
-        var howTabs = $('.place-block__how li');
+    if ($('.place-block__how-desctop-list').length) {
+        var howTabs = $('.place-block__how li, .artists__tabs li');
         howTabs.click(function () {
             var id = $(this).data('id');
             howTabs.removeClass('place-block__how--active');
             $(this).addClass('place-block__how--active')
-            $('.place-block__how_text-item').addClass('place-block__how_text--hidden');
+            $('.place-block__how_text-item, .artists__tab').addClass('hidden');
             $('.place-block__how-mobile-current p').text($(this).text())
-            $('.place-block__how_text-item[data-id="'+id+'"]').removeClass('place-block__how_text--hidden');
+            $('.place-block__how_text-item[data-id="'+id+'"], .artists__tab[data-id="'+id+'"]').removeClass('hidden');
         });
     }
     $('.place-block__how-mobile-current').click(function () {
@@ -133,6 +148,16 @@ $(document).ready(function () {
         })
     }
 
+    var spaceTabs = $('.space-tabs__item');
+    if (spaceTabs.length) {
+        spaceTabs.click(function () {
+            spaceTabs.removeClass('space-tabs__item--active');
+            $(this).addClass('space-tabs__item--active');
+            var id = $(this).data('id');
+            $('.space__tab').addClass('hidden');
+            $('.space__tab[data-id="'+id+'"]').removeClass('hidden')
+        })
+    }
     objectFitImages();
     svg4everybody()
 });

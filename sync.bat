@@ -1,1 +1,0 @@
-browser-sync start --no-online --server 
