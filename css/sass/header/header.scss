@@ -66,7 +66,7 @@
         }
         &:hover {
           a {
-            color: #fff;
+            color: $fontAccentColor;
           }
         }
       }
@@ -87,7 +87,7 @@
         z-index: 5;
         &.inner-list-wrap--open {
           .header__menu-list-dots {
-            color: #fff;
+            color: $fontAccentColor;
           }
           ul {
             opacity: 1;
@@ -100,7 +100,7 @@
           top: 36px;
           width: 230px;
           min-height: 180px;
-          background: #fff;
+          background: $fontAccentColor;
           padding: 13px 30px 19px;
           box-sizing: border-box;
           transition: .3s;
@@ -142,7 +142,7 @@
       margin: 0 10px;
       &:hover {
         svg {
-          fill: #fff;
+          fill: $fontAccentColor;
         }
       }
       svg {
@@ -161,11 +161,11 @@
       color: $fontColor;
       transition: .3s;
       &:not(span):hover {
-        color: #fff;
+        color: $fontAccentColor;
       }
     }
     &--current {
-      color: #fff;
+      color: $fontAccentColor;
     }
   }
 }
@@ -197,10 +197,10 @@
   &:hover {
     .buy-button__center-text {
       background: $bgColor;
-      color: #fff;
+      color: $fontAccentColor;
     }
     .buy-button__center-text:after {
-      background: #fff;
+      background: $fontAccentColor;
       transition-delay: .1s;
       transition: .3s;
 
@@ -240,7 +240,7 @@
     width: 3.7em;
     height: 3.7em;
     border-radius: 100px;
-    background: #fff;
+    background: $fontAccentColor;
     display: flex;
     border: 1px solid $fontColor;
     justify-content: center;
@@ -285,7 +285,7 @@
   cursor: pointer;
   &:hover {
     svg {
-      fill: #fff;
+      fill: $fontAccentColor;
     }
   }
   svg {
@@ -303,7 +303,7 @@
   left: 0;
   right: 0;
   top: 100%;
-  background: #fff;
+  background: $fontAccentColor;
   z-index: 1;
   &--open-icon {
     display: none !important;
@@ -325,7 +325,7 @@
   }
 }
 .header--mobile-open {
-  background: #fff;
+  background: $fontAccentColor;
   .header__lang-switch--current {
     color: $bgColor;
   }
@@ -381,7 +381,7 @@
 }
 .header__menu-list-item--active {
   a {
-    color: #fff;
+    color: $fontAccentColor;
   }
 }
 .header-mobile-menu--active {

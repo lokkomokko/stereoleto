@@ -99,7 +99,7 @@
       }
     }
     &__date {
-      color: #fff;
+      color: $fontAccentColor;
       display: inline;
       transition: .3s;
     }
@@ -108,14 +108,14 @@
         color: $fontColor;
       }
       .artists-item__name {
-        color: #fff;
+        color: $fontAccentColor;
       }
       .main-block__artists-list-lang {
-        color: #fff;
+        color: $fontAccentColor;
         transform: translateX(.13em);
       }
       .main-block__artists-list-arrow {
-        color: #fff;
+        color: $fontAccentColor;
         opacity: 1;
         transform: translateX(10px);
       }

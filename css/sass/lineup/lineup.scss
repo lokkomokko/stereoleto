@@ -78,7 +78,7 @@
       color: $fontColor;
     }
     &__time {
-      color: #fff;
+      color: $fontAccentColor;
       width: 1.6em;
       text-align: right;
       margin-left: 0.538em;
@@ -106,10 +106,10 @@
 a.lineup-item {
   &:hover, &--hovered {
     .lineup-item__name {
-      color: #fff;
+      color: $fontAccentColor;
     }
     .main-block__artists-list-lang {
-      color: #fff;
+      color: $fontAccentColor;
       transform: translateX(.13em);
     }
     .lineup-item__img {
@@ -118,7 +118,7 @@ a.lineup-item {
       transition: .2s ease-in-out  ;
     }
     .main-block__artists-list-arrow {
-      color: #fff;
+      color: $fontAccentColor;
       opacity: 1;
       transform: translateX(10px);
     }
@@ -193,7 +193,7 @@ a.lineup-item {
   }
   .lineup-item__date .lineup-item__name {
     font-size: 20px;
-    color: #fff;
+    color: $fontAccentColor;
   }
   .lineup-item__date .lineup-item__name {
     margin-left: 20px;

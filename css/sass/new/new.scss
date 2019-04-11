@@ -24,7 +24,7 @@
     text-decoration: underline;
     transition: .2s;
     &:hover {
-      color: #fff;
+      color: $fontAccentColor;
       text-decoration: none;
     }
   }

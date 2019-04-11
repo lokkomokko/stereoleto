@@ -61,7 +61,7 @@
     margin-bottom: 40px;
     &:hover {
       .about-old-item__name {
-        color: #fff;
+        color: $fontAccentColor;
       }
       .arrow {
         transform: translateX(4px);

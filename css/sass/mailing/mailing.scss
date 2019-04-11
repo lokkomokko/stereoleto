@@ -13,7 +13,7 @@
     min-width: 67px;
     min-height: 67px;
     border-radius: 100px;
-    background: #fff;
+    background: $fontAccentColor;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@
     &:hover {
       background: $fontColor;
       .icon {
-        fill: #fff;
+        fill: $fontAccentColor;
       }
     }
   }
@@ -98,7 +98,7 @@
 }
 
 .round label:after {
-  border: 2px solid #fff;
+  border: 2px solid $fontAccentColor;
   border-top: none;
   border-right: none;
   content: "";

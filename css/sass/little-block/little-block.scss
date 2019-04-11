@@ -11,7 +11,7 @@
 
     &:hover {
       .little-block__name {
-        color: #fff;
+        color: $fontAccentColor;
       }
       .arrow {
         //transform: scaleX(.5) !important;

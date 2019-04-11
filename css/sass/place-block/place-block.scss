@@ -60,14 +60,14 @@
         transition: .3s;
         border-bottom: 2px solid $fontColor;
         &.place-block__how--active {
-          color: #fff;
+          color: $fontAccentColor;
           border-color: transparent;
           &:after {
             opacity: 1;
           }
         }
         &:hover {
-          color: #fff;
+          color: $fontAccentColor;
           border-color: transparent;
         }
         &:after {
@@ -169,7 +169,7 @@
     position: relative;
     font-family: $font;
     font-size: 16px;
-    color: #fff;
+    color: $fontAccentColor;
     margin-top: 15px;
     p {
       display: inline-block;
@@ -186,7 +186,7 @@
   .place-block__how-mobile-list {
     display: flex;
     position: absolute;
-    background: #fff;
+    background: $fontAccentColor;
     width: auto;
     left: -10px;
     right: -10px;
