@@ -8,8 +8,18 @@
     width: calc(100% /3 - 80px);
     display: flex;
     flex-direction: column;
+    .little-block__img {
+      transition: .2s ;
+      transform-origin: 0 100%;
 
+    }
     &:hover {
+      .little-block__img {
+        //transform: translateY(-10px);
+        //transform: scale(1.1);
+        margin-top: -10px;
+        height: calc(100% + 12px);
+      }
       .little-block__name {
         color: $fontAccentColor;
       }

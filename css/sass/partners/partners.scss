@@ -61,8 +61,8 @@
     .partners-item {
       width: calc(100% / 4 - 40px);
       &__img {
-        height: 11vw;
-        max-height: 210px;
+        height: 14vw;
+        max-height: 240px;
       }
     }
   }
@@ -144,6 +144,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .partners-item__img {
+    border-radius: 10px !important;
+  }
   .partners-block__wrap {
     flex-wrap: wrap;
     //margin-left: 0 !important;

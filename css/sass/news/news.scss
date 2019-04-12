@@ -18,8 +18,12 @@
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    max-height: 256px;
-    height: 13vw;
+    height: 100%;
+    display: block;
+    &-wrap {
+      max-height: 256px;
+      height: 13vw;
+    }
     img {
       width: 100%;
       height: 100%;

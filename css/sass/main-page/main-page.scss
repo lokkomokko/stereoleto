@@ -166,10 +166,30 @@
       &:nth-child(4) {
         margin-bottom: 0.142em;
       }
-      &:nth-child(5) { font-size: 0.725em !important; margin-bottom: 0.075em }
-      &:nth-child(6) { font-size: 0.725em !important; margin-bottom: 0.075em }
-      &:nth-child(7) { font-size: 0.725em !important; margin-bottom: 0.075em }
-      &:nth-child(8) { font-size: 0.725em !important; margin-bottom: 0.075em }
+      &:nth-child(5) {
+        font-size: 0.725em !important; margin-bottom: 0.075em;
+        .arrow {
+          top: 0.48em;
+        }
+      }
+      &:nth-child(6) {
+        font-size: 0.725em !important; margin-bottom: 0.075em;
+        .arrow {
+          top: 0.48em;
+        }
+      }
+      &:nth-child(7) {
+        font-size: 0.725em !important; margin-bottom: 0.075em;
+        .arrow {
+          top: 0.48em;
+        }
+      }
+      &:nth-child(8) {
+        font-size: 0.725em !important; margin-bottom: 0.075em;
+        .arrow {
+          top: 0.48em;
+        }
+      }
     }
   }
   &__col-right {
@@ -425,6 +445,9 @@
     font-size: 16px;
     line-height: 23px;
   }
+  .main-block__artists-list li .arrow {
+    top: 0.48em;
+  }
 }
 @media screen and (max-width: 500px) {
   .main-block__artists-list li {
@@ -458,6 +481,11 @@
   }
   .main-block__artists-list-lang {
     margin-left: 7px;
+  }
+  .main-block__artists-list {
+    .main-block__artists-list-lang {
+      top: 1px;
+    }
   }
   .main-block__artists-list li .main-block__artists-list-all a {
     font-size: 16px;

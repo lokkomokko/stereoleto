@@ -52,6 +52,7 @@
       padding-bottom: 7px;
       margin-bottom: 14px;
       border-right: 0 !important;
+      border-radius: 0 !important;
 
       &::placeholder {
         color: $fontColor;
@@ -137,13 +138,51 @@
   border-radius: 50px;
 }
 
+.slider .slick-list, .slider .slick-track {
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 960px) {
   .mailing {
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 600px) {
+  .mailing__btn {
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  .mailing__input input {
+    font-size: 16px;
+  }
+  .round {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    white-space: nowrap;
+    right: 0;
+    display: block;
+  }
+  .mailing__input {
+    position: relative;
+  }
+  .slider .slick-list, .slider .slick-track {
+    border-radius: 10px;
+  }
+  .place-block__place-img {
+    border-radius: 10px
+  }
+}
 @media screen and (max-width: 400px) {
   .round {
-    display: flex;
+    top: 45px;
+    label {
+      top: 1px;
+    }
+  }
+  .mailing__btn {
+    margin-top: -13px;
   }
 }

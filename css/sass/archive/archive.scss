@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 972px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 60px;
   &__mobile-title {
     display: none;
   }
@@ -21,7 +21,7 @@
   }
   &__col {
     &:first-of-type {
-
+      margin-top: 25px;
     }
     &:last-of-type {
       margin-left: 78px;
@@ -43,7 +43,7 @@
     font-size: 80px;
     line-height: 76px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
   &__text {
     font-size: 18px;
@@ -80,6 +80,7 @@
     text-transform: uppercase;
     width: 50%;
     text-align: right;
+    margin-top: -11px;
   }
   .archive__col:first-of-type {
     display: flex;
@@ -99,6 +100,12 @@
 
 @media screen and (max-width: 600px) {
   .archive {
-    margin-top: 40px;
+    margin-top: 60px;
+  }
+  .archive__mobile-title {
+    margin-top: -15px;
+  }
+  .archive__back-link {
+    margin-bottom: 40px;
   }
 }

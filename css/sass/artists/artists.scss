@@ -33,6 +33,9 @@
   &-big {
     width: 40%;
     font-size: 60px;
+    .main-block__artists-list-arrow {
+      top: 0.48em;
+    }
     li {
       &:not(:last-of-type) {
         margin-bottom: 0.5em;
@@ -224,6 +227,9 @@
   .artists__tabs .place-block__how-mobile-current {
     margin-top: 0;
     position: static;
+    &:after {
+      transition: .3s;
+    }
   }
   .artists__tabs .place-block__how-mobile-list {
     left: 0;
@@ -238,6 +244,16 @@
   }
   .artists__title {
     font-size: 30px;
+    line-height: 30px;
+  }
+  .artists__tabs .place-block__how-mobile-current {
+    margin-top: -1px;
+  }
+  .artists {
+    margin-top: 40px;
+  }
+  .artists__tabs .place-block__how-mobile-list {
+    top: 45px;
   }
   .artists__top {
     margin-bottom: 20px;

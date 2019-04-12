@@ -133,6 +133,7 @@ $(document).ready(function () {
         });
     }
     $('.place-block__how-mobile-current').click(function () {
+        $(this).toggleClass('place-block__how-mobile-current--open')
         $('.place-block__how-mobile-list').toggleClass('place-block__how-mobile-list--open')
     });
 
