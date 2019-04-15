@@ -374,6 +374,14 @@
     transform: translateX(-100vw);
   }
 }
+@keyframes scrollingTextMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-7000px);
+  }
+}
 @keyframes spin {
   from {
     transform:rotate(0deg);
@@ -540,5 +548,8 @@
   .header-mobile-menu {
     display: flex;
     flex-direction: column;
+  }
+  .header__bottom-text p {
+    animation: scrollingTextMobile 120s linear infinite;
   }
 }

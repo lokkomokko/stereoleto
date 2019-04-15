@@ -5,19 +5,19 @@ window.onbeforeunload = function () {
     }
 };
 
+if (document.querySelector('body').classList.contains('scroll-body')) {
+    var ratio = window.innerWidth <= 600 ? 3.3 : 4.6;
+
+        window.scrollTo(0, window.innerWidth / ratio);
+        $(this).scrollTop(window.innerWidth / ratio);
+}
+
 $(document).ready(function () {
 
     var body = $('body');
     var html = $('html');
 
-    if (body.hasClass('scroll-body')) {
-        var ratio = window.innerWidth <= 600 ? 3.3 : 4.6;
 
-        setTimeout(function () {
-            window.scrollTo(0, window.innerWidth / ratio);
-            $(this).scrollTop(window.innerWidth / ratio);
-        }, 10)
-    }
     var mainVideo = $('.header__top video');
 
     if ($(window).width() <= 600 ) {
@@ -33,40 +33,61 @@ $(document).ready(function () {
 
         full_text = scrollingText.find('p').text()
     //
-    while(current_width <= 20000) {
+    while(current_width <= 40000) {
         scrollingText.find('p').append(full_text);
         current_width = scrollingText.find('p').width()
     }
 
     var artistList = $('.main-block__artists-list');
     if (artistList.length) {
-        artistList.find('li').first().addClass('main-block__artists-list-item--hovered')
-    }
-    artistList.find('li a').hover(function () {
-        if (artistList.find('li').first().hasClass('main-block__artists-list-item--hovered')) {
-            artistList.find('li').first().removeClass('main-block__artists-list-item--hovered')
-        }
-    });
-    artistList.find('li a').mouseleave(function () {
-        if (!artistList.find('li').first().hasClass('main-block__artists-list-item--hovered')) {
+        $(window).resize(function () {
+            if ($(window).width()>960) {
+                artistList.find('li').first().addClass('main-block__artists-list-item--hovered')
+            }
+        });
+        if ($(window).width() > 960) {
             artistList.find('li').first().addClass('main-block__artists-list-item--hovered')
+
+            artistList.find('li a').hover(function () {
+                if (artistList.find('li').first().hasClass('main-block__artists-list-item--hovered')) {
+                    artistList.find('li').first().removeClass('main-block__artists-list-item--hovered')
+                }
+            });
+            artistList.find('li a').mouseleave(function () {
+                if (!artistList.find('li').first().hasClass('main-block__artists-list-item--hovered')) {
+                    artistList.find('li').first().addClass('main-block__artists-list-item--hovered')
+                }
+            });
         }
-    });
+        else {
+            artistList.find('li a').click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var el = $(this);
+                el.parent().addClass('main-block__artists-list-item--hovered')
+                setTimeout(function () {
+                    window.location.href = el.attr('href');
+                }, 300)
+            });
+        }
+    }
 
     var artistListLineup = $('.lineup');
     if (artistListLineup.length) {
-        artistListLineup.find('a').first().addClass('lineup-item--hovered')
-    }
-    artistListLineup.find('a').hover(function () {
-        if (artistListLineup.find('a').first().hasClass('lineup-item--hovered')) {
-            artistListLineup.find('a').first().removeClass('lineup-item--hovered')
-        }
-    });
-    artistListLineup.find('a').mouseleave(function () {
-        if (!artistListLineup.find('a').first().hasClass('lineup-item--hovered')) {
+        if ($(window).width()>960) {
             artistListLineup.find('a').first().addClass('lineup-item--hovered')
         }
-    });
+        artistListLineup.find('a').hover(function () {
+            if (artistListLineup.find('a').first().hasClass('lineup-item--hovered')) {
+                artistListLineup.find('a').first().removeClass('lineup-item--hovered')
+            }
+        });
+        artistListLineup.find('a').mouseleave(function () {
+            if (!artistListLineup.find('a').first().hasClass('lineup-item--hovered')) {
+                artistListLineup.find('a').first().addClass('lineup-item--hovered')
+            }
+        });
+    }
 
 
     var slider = $('.slider');

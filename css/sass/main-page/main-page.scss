@@ -343,6 +343,11 @@
   .main-block__artists-list li, .main-block__artists-list ul {
     font-size: 90px;
   }
+  //.main-block__artists-list li:hover {
+  //  a, .main-block__artists-list-lang {
+  //    color : inherit !important;
+  //  }
+  //}
   .main-block {
     flex-direction: column;
   }
@@ -405,6 +410,8 @@
   .main-block__img {
     transform: scale(1) !important;
   }
+
+
 }
 @media screen and (max-width: 740px) {
   .main-block {
