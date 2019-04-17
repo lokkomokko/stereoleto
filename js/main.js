@@ -17,13 +17,12 @@ $(document).ready(function () {
     var body = $('body');
     var html = $('html');
 
-
     var mainVideo = $('.header__top video');
 
     if ($(window).width() <= 600 ) {
-        mainVideo.append("<source type='video/mp4' src='" + 'img/stereo_header_600.mp4' + "' />");
+        mainVideo.append("<source type='video/mp4' src='" + mainVideo.data('header600') + "' />");
     } else {
-        mainVideo.append("<source type='video/mp4' src='" + 'img/stereo_header.mp4' + "' />");
+        mainVideo.append("<source type='video/mp4' src='" + mainVideo.data('header') + "' />");
     }
 
 
@@ -193,6 +192,20 @@ $(document).ready(function () {
             innerList.css('max-height', height);
         })
     }
+
+    var fform = $('.f-form');
+
+    if (fform.length) {
+        fform.find('input, textarea').change(function () {
+            if ($(this).val() !== '') {
+                $(this).closest('.f-form__input').addClass('f-form__input--show-label')
+            } else {
+                $(this).closest('.f-form__input').removeClass('f-form__input--show-label')
+            }
+        })
+    }
+
     objectFitImages();
     svg4everybody()
+
 });

@@ -1,0 +1,121 @@
+.f-form {
+  display: flex;
+  flex-direction: column;
+  border-top: 10px solid $fontColor;
+  margin-top: 50px;
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+
+    label {
+      font-size: 12px;
+      line-height: 17px;
+      color: $fontAccentColor;
+      transition: .3s;
+      opacity: 0;
+      order: -1;
+    }
+    input {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      border: none;
+      background: transparent;
+      color: $fontColor;
+      border-bottom: 1px solid $fontColor;
+      font-family: $font;
+      transition: .3s;
+
+      &::placeholder {
+        color: $fontColor;
+        transition: .3s;
+      }
+      &:focus {
+        border-color: $fontAccentColor;
+        &::placeholder {
+          color: transparent;
+        }
+        ~label {
+          opacity: 1;
+        }
+      }
+    }
+    &--single {
+      width: 100%;
+    }
+    &--textarea {
+      width: 100%;
+      margin-top: 5px;
+      label {
+        margin-bottom: 5px;
+      }
+    }
+    &--show-label {
+      label {
+        opacity: 1;
+      }
+    }
+  }
+  textarea {
+    border-radius: 10px;
+    border: 1px solid $fontColor;
+    background: transparent;
+    font-family: $font;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    box-shadow: none !important;
+    color: $fontColor;
+    &::placeholder {
+      color: $fontColor;
+      transition: .3s;
+    }
+    &:focus {
+      border-color: $fontAccentColor;
+
+      &::placeholder {
+        color: transparent;
+      }
+      ~label {
+        opacity: 1;
+      }
+    }
+  }
+  &__submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    button {
+      display: inline-block;
+      background: $fontAccentColor;
+      color: $fontColor;
+      border-radius: 10px;
+      font-family: $fontAccent;
+      font-size: 24px;
+      border: none;
+      text-transform: uppercase;
+      padding: 0.35em 2.5em;
+      transition: .3s;
+      &:hover {
+        color: $bgColor;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .f-form__input {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .f-form__row {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}

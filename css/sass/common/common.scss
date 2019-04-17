@@ -18,7 +18,9 @@ a {
 .order-unset {
   order: unset;
 }
-
+b {
+  font-family: $fontBold;
+}
 .link {
   border-bottom: 1px solid $bgColor;
   padding-bottom: 3px;
