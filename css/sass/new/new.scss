@@ -16,8 +16,12 @@
 }
 .article__text {
   white-space: initial;
-  p {
+  p, span {
     white-space: pre-line;
+  }
+  span {
+    font-size: 18px !important;
+    line-height: 25px !important;
   }
   a {
     font-family: $fontBold;

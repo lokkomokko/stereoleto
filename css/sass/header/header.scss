@@ -544,6 +544,11 @@
   .header-mobile-menu__social {
     margin-top: auto;
     padding-top: 20px;
+    height: 100px;
+    align-items: baseline;
+  }
+  .header-mobile-menu__social:after {
+    display: none;
   }
   .header-mobile-menu {
     display: flex;

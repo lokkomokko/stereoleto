@@ -131,30 +131,40 @@ footer {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 32px;
+    //padding-bottom: 32px;
+    padding-bottom: 0;
   }
   .footer__contacts-row--x4 {
-    position: absolute;
-    left: 13px;
-    bottom: 18px;
+    //position: absolute;
+    //left: 13px;
+    //bottom: 18px;
+    position: static;
+    margin-top: 0;
+  }
+  .footer__contacts-row--x4 {
+    &:not(:last-of-type) {
+      margin-top: 20px;
+    }
   }
   .footer__contacts {
     order: 1;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .footer__logo {
     order: 2;
+    padding-top: 8px;
     img {
       width: 97px;
     }
   }
   .footer__nav {
-    order: 4
+    order: 1;
+    margin-bottom: 30px;
   }
   .footer__social{
     width: 100%;
-    order: 3;
+    order: 1;
     margin-bottom: 20px;
     ul {
       justify-content: space-around;
