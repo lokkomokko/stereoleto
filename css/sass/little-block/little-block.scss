@@ -8,18 +8,26 @@
     width: calc(100% /3 - 80px);
     display: flex;
     flex-direction: column;
+    .little-block__img {
+      //overflow: hidden;
+    }
     .little-block__img img{
       transition: .4s ;
       transform-origin: 0 100%;
+      height: calc(100% + 20px);
       backface-visibility: hidden;
       will-change: transform;
     }
+    .little-block__name {
+      z-index: 1;
+      background: $bgColor  ;
+    }
     &:hover {
       .little-block__img img{
-        //transform: translateY(-10px);
+        transform: translateY(-20px);
         //transform: scale(1.1);
-        margin-top: -20px;
-        height: calc(100% + 20px);
+        //margin-top: -20px;
+        //height: calc(100% + 20px);
       }
       .little-block__name {
         color: $fontAccentColor;
