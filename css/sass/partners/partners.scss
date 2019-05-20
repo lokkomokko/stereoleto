@@ -83,9 +83,13 @@
     .partners-block__wrap {
       margin-left: -20px;
       margin-right: -20px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: -10px;
     }
     .partners-item {
       width: calc(100% / 6 - 40px);
+      margin-top: 40px;
       &__img {
         height: 9vw;
         border-radius: 13px;
@@ -134,6 +138,7 @@
   .partners-block--4 .partners-item {
     width: calc(100% / 6 - 30px);
     margin: 0 15px;
+    margin-top: 30px;
   }
 
 
@@ -178,5 +183,8 @@
   }
   .partners-block {
     margin-bottom: 20px;
+  }
+  .partners-block--4 .partners-block__wrap {
+    margin-top: 30px;
   }
 }
