@@ -29,6 +29,10 @@
       line-height: 25px;
       white-space: pre-line;
     }
+    span {
+      font-size: 18px !important;
+      line-height: 25px !important;
+    }
   }
   &__col {
     &:first-of-type {
@@ -75,9 +79,12 @@
       transform: scale(1);
       transition: .3s;
       transform-origin: 50% 100%;
+      height: 14vw;
+      max-height: 270px;
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        @extend %img-cover;
       }
     }
     &__name {
@@ -112,6 +119,10 @@
   .about-old-item {
     width: calc(100% / 6 - 40px);
   }
+  .about-old-item__img {
+    height: 18vw;
+    max-height: 300px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .about-old-item {
@@ -142,11 +153,17 @@
   .about-old {
     margin-top: 65px;
   }
-
+  .about-old-item__img {
+    height: 28vw;
+  }
 }
 @media screen and (max-width: 960px) {
   .about-old-item {
     width: calc(100% / 3 - 40px);
+  }
+  .about-old-item__img {
+    height: 39vw;
+    max-height: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -165,5 +182,8 @@
   .about-old-item__name {
     font-size: 20px;
     margin-top: 7px;
+  }
+  .about-old-item__img {
+    height: 63vw;
   }
 }
