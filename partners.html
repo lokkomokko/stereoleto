@@ -6,401 +6,583 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="scroll-body">  <!--На страницах кроме главной подключать этот класс (нужен для сокрытия шапки)-->
+<body class="scroll-body">
 <header class="header">
     <div class="header__top">
-        <video autoplay poster="img/top.png" loop muted></video>
+        <video autoplay="" poster="/images/site/top.png" loop="" muted="" data-header600="/images/video/stereo_header_600.mp4" data-header="/images/video/stereo_header.mp4"><source type="video/mp4" src="/images/video/stereo_header.mp4"></video>
     </div>
 
     <div class="header__bottom">
         <div class="header__bottom-logo">
             <div class="header__mobile-menu-toggle" id="mobile-menu-toggle">
                 <svg class="header-mobile-menu--close-icon">
-                    <use xlink:href="img/sprite.symbol.svg#menu"></use>
+                    <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#menu"></use>
                 </svg>
                 <svg class="header-mobile-menu--open-icon icon icon-arrowL">
-                    <use xlink:href="img/sprite.symbol.svg#arrowL"></use>
+                    <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#arrowL"></use>
                 </svg>
             </div>
             <a href="/">
                 <svg>
-                    <use xlink:href="img/sprite.symbol.svg#logo"></use>
+                    <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#logo"></use>
                 </svg>
             </a>
         </div>
         <nav class="header__menu">
             <ul class="header__menu-list">
-                <li class="header__menu-list-item"><a href="">О фестивале</a></li>
-                <li class="header__menu-list-item"><a href="">Участники</a></li>
-                <li class="header__menu-list-item"><a href="">Пространство</a></li>
-                <li class="header__menu-list-item"><a href="">Новости</a></li>
+                <li class="header__menu-list-item">
+                    <a href="/o-festivale/">
+                        О фестивале			</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a href="/artisty/">
+                        Артисты			</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a href="/prostranstvo/">
+                        Пространство			</a>
+                </li>
+                <li class="header__menu-list-item">
+                    <a href="/novosti/">
+                        Новости			</a>
+                </li>
                 <li class="header__menu-list-inner inner-list-wrap">
                     <span class="header__menu-list-dots inner-list-wrap__trigger">...</span>
                     <ul>
-                        <li><a href="">Партнеры</a></li>
-                        <li><a href="">Вопросы и ответы</a></li>
-                        <li><a href="">Контакты</a></li>
-                        <li><a href="">Аккредитация</a></li>
-                        <li><a href="">Регистрация артистов</a></li>
+                        <li class="active">
+                            <a href="/partnery/">
+                                Партнеры			</a>
+                        </li>
+                        <li>
+                            <a href="/faq/">
+                                Вопросы и ответы			</a>
+                        </li>
+                        <li>
+                            <a href="/kontakty/">
+                                Контакты			</a>
+                        </li>
+                        <li>
+                            <a href="/akkreditaciya/">
+                                Аккредитация			</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </nav>
+
         <div class="header__social">
             <ul>
                 <li class="header__social-item">
-                    <a href="" title="vkontakte">
+                    <a href="https://vk.com/stereoleto" title="vkontakte" target="_blank">
                         <svg class="icon icon-vk">
-                            <use xlink:href="img/sprite.symbol.svg#vk"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#vk"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header__social-item">
-                    <a href="" title="facebook">
+                    <a href="https://www.facebook.com/STEREOLETO/" title="facebook" target="_blank">
                         <svg class="icon icon-fb">
-                            <use xlink:href="img/sprite.symbol.svg#fb"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#fb"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header__social-item">
-                    <a href="" title="instagram">
+                    <a href="https://www.instagram.com/stereoleto2019/" title="instagram" target="_blank">
                         <svg class="icon icon-in">
-                            <use xlink:href="img/sprite.symbol.svg#in"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#in"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="header__social-item">
-                    <a href="" title="twitter">
-                        <svg class="icon icon-tw">
-                            <use xlink:href="img/sprite.symbol.svg#tw"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="header__social-item">
-                    <a href="" title="youtube">
+                    <a href="https://www.youtube.com/stereoletofest" title="youtube" target="_blank">
                         <svg class="icon icon-you">
-                            <use xlink:href="img/sprite.symbol.svg#you"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#you"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
 
             <div class="header__lang-switch">
-                <a class="header__lang-switch--current" href="/">ру</a>
+                <a href="/" class="header__lang-switch--current">ру</a>
                 <span>/</span>
-                <a href="">en</a>
+                <a href="/en/">en</a>
             </div>
         </div>
     </div>
     <div class="header__bottom-text">
-        <p>6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;</p>
+        <p>6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;6-7 июля 2019&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;СЕВКАБЕЛЬ ПОРТ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;ВОСЕМНАДЦАТЫЙ СОВЕРШЕННО ЛЕтНИЙ&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;</p>
     </div>
     <div class="header-mobile-menu">
         <ul class="header-mobile-menu__nav">
-            <li class="order-1 order-unset">
-                <a href="">о фестивале</a>
+            <li class="order-unset">
+                <a href="/o-festivale/">
+                    О фестивале			</a>
             </li>
-            <li class="order-4 order-unset">
-                <a href="">новости</a>
+            <li class="order-unset">
+                <a href="/artisty/">
+                    Артисты			</a>
             </li>
-            <li class="order-7 order-unset">
-                <a href="">контакты</a>
+            <li class="order-unset">
+                <a href="/prostranstvo/">
+                    Пространство			</a>
             </li>
-            <li class="order-2 order-unset">
-                <a href="">участники</a>
+            <li class="order-unset">
+                <a href="/novosti/">
+                    Новости			</a>
             </li>
-            <li class="order-5 order-unset">
-                <a href="">партнеры</a>
+            <li class="active order-unset">
+                <a href="/partnery/">
+                    Партнеры			</a>
             </li>
-            <li class="order-6 order-unset">
-                <a href="">аккредитация</a>
+            <li class="order-unset">
+                <a href="/faq/">
+                    Вопросы и ответы			</a>
             </li>
-            <li class="order-3 order-unset">
-                <a href="">пространство</a>
+            <li class="order-unset">
+                <a href="/kontakty/">
+                    Контакты			</a>
             </li>
-            <li class="order-9 order-unset">
-                <a href="">вопросы и ответы</a>
+            <li class="order-unset">
+                <a href="/akkreditaciya/">
+                    Аккредитация			</a>
             </li>
-            <li class="order-8 order-unset">
-                <a href="">регистрация артистов</a>
-            </li>
-            <li class="order-10 header__lang-switch--mobile">
-                <a class="header__lang-switch--current" href="/">ру</a>
+            <li class="order-10 header__lang-switch--mobile order-unset">
+                <a href="/" class="header__lang-switch--current">ру</a>
                 <span>/</span>
-                <a href="">en</a>
+                <a href="/en/">en</a>
             </li>
         </ul>
         <ul class="header-mobile-menu__social">
-            <li>
-                <a href="">
+            <li class="order-unset">
+                <a href="https://vk.com/stereoleto" target="_blank">
                     <svg class="icon icon-vk">
-                        <use xlink:href="img/sprite.symbol.svg#vk"></use>
+                        <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#vk"></use>
                     </svg>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="order-unset">
+                <a href="https://www.facebook.com/STEREOLETO/" target="_blank">
                     <svg class="icon icon-fb">
-                        <use xlink:href="img/sprite.symbol.svg#fb"></use>
+                        <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#fb"></use>
                     </svg>
                 </a>
             </li>
-            <li>
-                <a href="">
+            <li class="order-unset">
+                <a href="https://www.instagram.com/stereoleto2019/" target="_blank">
                     <svg class="icon icon-in">
-                        <use xlink:href="img/sprite.symbol.svg#in"></use>
+                        <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#in"></use>
                     </svg>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <svg class="icon icon-tw">
-                        <use xlink:href="img/sprite.symbol.svg#tw"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="">
+            <li class="order-unset">
+                <a href="https://www.youtube.com/stereoletofest" target="_blank">
                     <svg class="icon icon-you">
-                        <use xlink:href="img/sprite.symbol.svg#you"></use>
+                        <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#you"></use>
                     </svg>
                 </a>
             </li>
         </ul>
     </div>
 </header>
-
 <main class="main">
-    <a href="" class="buy-button" id="buy-button">
-        <div class="buy-button__circle-text buy-button__circle-text--top">   До фестиваля — 28 дней   </div>
-        <div class="buy-button__circle-text buy-button__circle-text--bottom">   До фестиваля — 28 дней   </div>
+    <a class="buy-button is_stuck" id="buy-button" href="https://spb.kassir.ru/frame/entry/index?key=1574f153-be64-b7c7-e8ec-f9881b69193a&amp;type=A&amp;id=5279" onclick="return window.kassirWidget.summon({ url:'https://spb.kassir.ru/frame/entry/index?key=1574f153-be64-b7c7-e8ec-f9881b69193a&amp;type=A&amp;id=5279' })" style="position: fixed; top: 30px; width: 90.7969px;">
+        <div class="buy-button__circle-text buy-button__circle-text--top" aria-label="   До фестиваля — 7 дней   "><span class="char1" aria-hidden="true"> </span><span class="char2" aria-hidden="true"> </span><span class="char3" aria-hidden="true"> </span><span class="char4" aria-hidden="true">Д</span><span class="char5" aria-hidden="true">о</span><span class="char6" aria-hidden="true"> </span><span class="char7" aria-hidden="true">ф</span><span class="char8" aria-hidden="true">е</span><span class="char9" aria-hidden="true">с</span><span class="char10" aria-hidden="true">т</span><span class="char11" aria-hidden="true">и</span><span class="char12" aria-hidden="true">в</span><span class="char13" aria-hidden="true">а</span><span class="char14" aria-hidden="true">л</span><span class="char15" aria-hidden="true">я</span><span class="char16" aria-hidden="true"> </span><span class="char17" aria-hidden="true">—</span><span class="char18" aria-hidden="true"> </span><span class="char19" aria-hidden="true">7</span><span class="char20" aria-hidden="true"> </span><span class="char21" aria-hidden="true">д</span><span class="char22" aria-hidden="true">н</span><span class="char23" aria-hidden="true">е</span><span class="char24" aria-hidden="true">й</span><span class="char25" aria-hidden="true"> </span><span class="char26" aria-hidden="true"> </span><span class="char27" aria-hidden="true"> </span></div>
+        <div class="buy-button__circle-text buy-button__circle-text--bottom" aria-label="   До фестиваля — 7 дней   "><span class="char1" aria-hidden="true"> </span><span class="char2" aria-hidden="true"> </span><span class="char3" aria-hidden="true"> </span><span class="char4" aria-hidden="true">Д</span><span class="char5" aria-hidden="true">о</span><span class="char6" aria-hidden="true"> </span><span class="char7" aria-hidden="true">ф</span><span class="char8" aria-hidden="true">е</span><span class="char9" aria-hidden="true">с</span><span class="char10" aria-hidden="true">т</span><span class="char11" aria-hidden="true">и</span><span class="char12" aria-hidden="true">в</span><span class="char13" aria-hidden="true">а</span><span class="char14" aria-hidden="true">л</span><span class="char15" aria-hidden="true">я</span><span class="char16" aria-hidden="true"> </span><span class="char17" aria-hidden="true">—</span><span class="char18" aria-hidden="true"> </span><span class="char19" aria-hidden="true">7</span><span class="char20" aria-hidden="true"> </span><span class="char21" aria-hidden="true">д</span><span class="char22" aria-hidden="true">н</span><span class="char23" aria-hidden="true">е</span><span class="char24" aria-hidden="true">й</span><span class="char25" aria-hidden="true"> </span><span class="char26" aria-hidden="true"> </span><span class="char27" aria-hidden="true"> </span></div>
         <span class="buy-button__center-text">Купить билет</span>
-    </a>
-    <div class="container">
-        <section class="partners">
-            <div class="partners-block partners-block--1">
-                <h2 class="partners__title">Титульный партнер:</h2>
-                <div class="partners-block__wrap">
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-6.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                </div>
+    </a><div style="position: absolute; width: 90.7969px; height: 90.7969px; display: block; vertical-align: baseline; float: none;"></div>	    <div class="container">
+    <section class="partners">
+        <div class="partners-block partners-block--1">
+            <h2 class="partners__title">Титульный партнер:</h2>
+            <div class="partners-block__wrap">
+                <a href="https://www.tinkoff.ru" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/snimok_ekrana_2019-04-16_v_10_20_45.png" alt="Титульный партнер">
+				                    </span>
+                </a>
             </div>
-            <div class="partners-block partners-block--2">
-                <h2 class="partners__title">Фестиваль проходит при поддержке:</h2>
-                <div class="partners-block__wrap">
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="partners-block partners-block--3">
-                <h2 class="partners__title">Генеральные инфопартнеры:</h2>
-                <div class="partners-block__wrap">
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="partners-block partners-block--4">
-                <h2 class="partners__title">Инфопартнеры:</h2>
-                <div class="partners-block__wrap">
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                    <a href="" class="partners-item">
-                        <span class="partners-item__img">
-                            <img src="img/test-img-1.jpg" alt="Логотип партнера">
-                        </span>
-                    </a>
-                </div>
-            </div>
+        </div>
 
-            <div class="place-block space space-partners space__tab ">
-                <h1 class="partners__title">Партнеры:</h1>
-                <div class="about-old">
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                    <a href="" class="about-old-item" title="Партнер такой то">
-                    <span class="about-old-item__img">
-                        <img src="img/test-img-5.png" alt="Логотип партнера">
-                    </span>
-                    </a>
-                </div>
+        <div class="partners-block partners-block--2">
+            <h2 class="partners__title">Фестиваль проходит при поддержке:</h2>
+            <div class="partners-block__wrap">
+                <a href="https://www.danishculture.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/при поддержке/snimok_ekrana_2019-05-22_v_12_33_48.png" alt="Датский культурный институт">
+				                    </span>
+                </a>
+                <a href="https://embassies.gov.il/spb/Pages/default.aspx" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/при поддержке/snimok_ekrana_2019-06-28_v_0_56_29.png" alt="Генеральное консульство Израиля в Санкт-Петербурге">
+				                    </span>
+                </a>
+                <a href="https://www.norway.no/ru/russia/norway-russia/consulate-general-st-petersburg/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/при поддержке/snimok_ekrana_2019-06-28_v_1_01_56.png" alt="Генеральное Консульство Королевства Норвегия в Санкт-Петербурге">
+				                    </span>
+                </a>
+                <a href="https://finlandabroad.fi/web/rus/generalnoe-konsulsva" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/при поддержке/finskoe_kons-vo.jpg" alt="Генеральное консульство Финляндии в Санкт-Петербурге">
+				                    </span>
+                </a>
             </div>
-        </section>
-    </div>
+        </div>
+
+        <div class="partners-block partners-block--3">
+            <h2 class="partners__title">Генеральные инфопартнеры:</h2>
+            <div class="partners-block__wrap">
+                <a href="https://ctc.ru/online/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/dizajn_bez_nazvaniya_19.png" alt="СТС">
+				                    </span>
+                </a>
+                <a href="https://vk.com/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/vk.png" alt="VK">
+				                    </span>
+                </a>
+                <a href="http://www.europaplus.ru/live" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/snimok_ekrana_2019-04-16_v_10_23_17.png" alt="ЕВРОПА ПЛЮС">
+				                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="partners-block partners-block--4">
+            <h2 class="partners__title">Инфопартнеры:</h2>
+            <div class="partners-block__wrap">
+                <a href="https://daily.afisha.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_9.png" alt="1 АфишаDaily">
+				                    </span>
+                </a>
+                <a href="https://kudago.com/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_11.png" alt="2 KudaGo">
+				                    </span>
+                </a>
+                <a href="https://www.the-village.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/village.png" alt="3 Village">
+				                    </span>
+                </a>
+                <a href="https://peterburg2.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_12.png" alt="4 Peterburg2">
+				                    </span>
+                </a>
+                <a href="https://www.kp.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_13.png" alt="5 Комсомольская правда">
+				                    </span>
+                </a>
+                <a href="http://o2tv.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/o_2.png" alt="6 О!2">
+				                    </span>
+                </a>
+                <a href="http://1ptv.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/ptv.png" alt="7 ПТВ">
+				                    </span>
+                </a>
+                <a href="https://www.wonderzine.com/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/wonder.png" alt="8 Wonderzine">
+				                    </span>
+                </a>
+                <a href="https://paperpaper.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/bumaga.png" alt="9 Бумага">
+				                    </span>
+                </a>
+                <a href="https://www.mtv.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/mtv.png" alt="10 MTV">
+				                    </span>
+                </a>
+                <a href="http://www.sobaka.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/sobaka.png" alt="11 Cобака">
+				                    </span>
+                </a>
+                <a href="https://topdialog.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_14.png" alt="12 Диалог">
+				                    </span>
+                </a>
+                <a href="http://djmag.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_15.png" alt="13 DJMag">
+				                    </span>
+                </a>
+                <a href="https://mixmag.io/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/dizajn_bez_nazvaniya_3.png" alt="14 MixMag">
+				                    </span>
+                </a>
+                <a href="https://kinoafisha.info" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/kinoafisha.png" alt="15 КиноАфиша">
+				                    </span>
+                </a>
+                <a href="https://allcafe.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/allcafe1.png" alt="16 Allcafe">
+				                    </span>
+                </a>
+                <a href="http://www.rusrep.ru/authors/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_16.png" alt="17 Русский репортер">
+				                    </span>
+                </a>
+                <a href="http://expertnw.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_17.png" alt="18 Эксперт северо-запад">
+				                    </span>
+                </a>
+                <a href="http://storiesmg.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/stories.png" alt="19 Stories magazine">
+				                    </span>
+                </a>
+                <a href="https://www.restorating.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/restorating.png" alt="20 Restorating">
+				                    </span>
+                </a>
+                <a href="https://o-zine.ru" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/otkrytye.png" alt="21 Открытые">
+				                    </span>
+                </a>
+                <a href="https://night2day.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_18.png" alt="22 Night 2 Day">
+				                    </span>
+                </a>
+                <a href="https://ok.ru/" class="partners-item" target="_blank">
+				                				                    <span class="partners-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/инфопартнеры/dizajn_bez_nazvaniya_20.png" alt="23 ОК">
+				                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="place-block space space-partners space__tab">
+            <h1 class="partners__title">Партнеры:</h1>
+            <div class="about-old">
+                <a href="https://re-store.ru" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/restore.png" alt="1 Re:store">
+				                    </span>
+                </a>
+                <a href="https://my.baltika.ru/vse-o-pive/brendy/barley-bros-naturalno-estestvenno/?utm_source=my.baltika.ru&amp;utm_medium=main_slider&amp;utm_campaign=Barley+Bros%3A+%D0%BD%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%3F+%D0%95%D1%81%D1%82%D0%B5%D1%81%D1%82%D0%" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/barley_bros.png" alt="2 Barley Bros">
+				                    </span>
+                </a>
+                <a href="https://beeline.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/bilajn.png" alt="3 Билайн">
+				                    </span>
+                </a>
+                <a href="https://tesstea.co.uk" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/tess.png" alt="4 Tess">
+				                    </span>
+                </a>
+                <a href="https://jardincoffee.com" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/jardin.png" alt="5 Jardin">
+				                    </span>
+                </a>
+                <a href="https://corporate.baltika.ru/brands/kronenbourg-1664/kronenbourg-1664-blanc/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/kronenbourg.png" alt="6 Kronenbourg 1664 Blanc">
+				                    </span>
+                </a>
+                <a href="https://corporate.baltika.ru/brands/flash-up/flash-up/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/dizajn_bez_nazvaniya_4.png" alt="7 Flash UP">
+				                    </span>
+                </a>
+                <a href="https://www.befree.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/befree.png" alt="Be free">
+				                    </span>
+                </a>
+                <a href="https://bolt.eu/ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/dizajn_bez_nazvaniya_29.png" alt="8 Bolt">
+				                    </span>
+                </a>
+                <a href="https://www.blu.com/ru/RU" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/my_blu.png" alt="9 My blu">
+				                    </span>
+                </a>
+                <a href="http://bushe.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/bushe.png" alt="10 Буше">
+				                    </span>
+                </a>
+                <a href="https://www.amediateka.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/amediateka1.png" alt="11 Amediateka">
+				                    </span>
+                </a>
+                <a href="http://tk-pik.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/dizajn_bez_nazvaniya_2.png" alt="12 ПИК">
+				                    </span>
+                </a>
+                <a href="https://www.respublica.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/respublika_1.png" alt="13 Республика">
+				                    </span>
+                </a>
+                <a href="http://tseh85.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/ceh1.png" alt="14 ЦЕХ 85">
+				                    </span>
+                </a>
+                <a href="https://www.electrabike.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/elektra1.png" alt="15 Elektra">
+				                    </span>
+                </a>
+                <a href="https://okko.tv/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/okko.png" alt="16 ОККО">
+				                    </span>
+                </a>
+                <a href="https://www.muztorg.ru" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/muztorg1.png" alt="17 Музторг">
+				                    </span>
+                </a>
+                <a href="https://www.fitmost.ru" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/fitmost1.png" alt="18 Fitmost">
+				                    </span>
+                </a>
+                <a href="https://dostaevsky.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/dostaevskij.png" alt="19 Dostaевский">
+				                    </span>
+                </a>
+                <a href="http://greenboxes.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/greenbox.png" alt="20 Greenbox">
+				                    </span>
+                </a>
+                <a href="https://mcoffee.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/my.png" alt="21 My кофе-бар">
+				                    </span>
+                </a>
+                <a href="https://www.mobylines.com/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/moby1.png" alt="MOBY">
+				                    </span>
+                </a>
+                <a href="https://www.instagram.com/nonform_world/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/dizajn_bez_nazvaniya_21.png" alt="Nonform">
+				                    </span>
+                </a>
+                <a href="https://2gis.ru/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/dizajn_bez_nazvaniya_30.png" alt="2Gis">
+				                    </span>
+                </a>
+                <a href="https://dlyanxs.com/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/dizajn_bez_nazvaniya_31.png" alt="Для нас">
+				                    </span>
+                </a>
+                <a href="https://esns.nl/" class="about-old-item" target="_blank">
+				                				                    <span class="about-old-item__img">
+				                        <img src="https://bestfest.ru/images/партнеры/Партнеры/snimok_ekrana_2019-06-28_v_1_06_53.png" alt="European Talent Exchange Programme ">
+				                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
 </main>
 
 
 <footer>
     <div class="footer">
         <div class="footer__logo">
-            <img src="img/light-music-logo.png" alt="Логотип 'Светлая музыка'">
+            <img src="/images/site/light-music-logo.png" alt="Логотип 'Светлая музыка'">
         </div>
         <nav class="footer__nav">
             <ul>
-                <li><a class="link" href="">О фестивале</a></li>
-                <li><a class="link" href="">Участники</a></li>
-                <li><a class="link" href="">Пространство</a></li>
-                <li><a class="link" href="">Новости</a></li>
-                <li><a class="link" href="">Партнеры</a></li>
-                <li><a class="link" href="">Вопросы и ответы</a></li>
-                <li><a class="link" href="">Контакты</a></li>
-                <li><a class="link" href="">Аккредитация</a></li>
-                <li><a class="link" href="">Регистрация артистов</a></li>
+                <li>
+                    <a href="/o-festivale/" class="link">
+                        О фестивале			</a>
+                </li>
+                <li>
+                    <a href="/artisty/" class="link">
+                        Артисты			</a>
+                </li>
+                <li>
+                    <a href="/prostranstvo/" class="link">
+                        Пространство			</a>
+                </li>
+                <li>
+                    <a href="/novosti/" class="link">
+                        Новости			</a>
+                </li>
+                <li class="active">
+                    <a href="/partnery/" class="link">
+                        Партнеры			</a>
+                </li>
+                <li>
+                    <a href="/faq/" class="link">
+                        Вопросы и ответы			</a>
+                </li>
+                <li>
+                    <a href="/kontakty/" class="link">
+                        Контакты			</a>
+                </li>
+                <li>
+                    <a href="/akkreditaciya/" class="link">
+                        Аккредитация			</a>
+                </li>
             </ul>
         </nav>
         <div class="footer__social">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="https://vk.com/stereoleto" target="_blank">
                         <svg class="icon icon-vk">
-                            <use xlink:href="img/sprite.symbol.svg#vk"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#vk"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://www.facebook.com/STEREOLETO/" target="_blank">
                         <svg class="icon icon-fb">
-                            <use xlink:href="img/sprite.symbol.svg#fb"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#fb"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="https://www.instagram.com/stereoleto2019/" target="_blank">
                         <svg class="icon icon-in">
-                            <use xlink:href="img/sprite.symbol.svg#in"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#in"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <svg class="icon icon-tw">
-                            <use xlink:href="img/sprite.symbol.svg#tw"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
+                    <a href="https://www.youtube.com/stereoletofest" target="_blank">
                         <svg class="icon icon-you">
-                            <use xlink:href="img/sprite.symbol.svg#you"></use>
+                            <use xlink:href="/templates/stereoleto/img/sprite.symbol.svg#you"></use>
                         </svg>
                     </a>
                 </li>
@@ -409,18 +591,96 @@
         <div class="footer__contacts">
             <p class="footer__contacts-row">© СТЕРЕОЛЕТО 2002—2019</p>
             <a class="footer__contacts-row link" href="mailto:info@light-music.ru">info@light-music.ru</a>
-            <a class="footer__contacts-row" href="tel:78123274236">+7 (812) 327-42-36</a>
-            <p class="footer__contacts-row footer__contacts-row--x4">Дизайн сайта: <a class="link" href="">x4.digital</a></p>
+            <a class="footer__contacts-row" href="tel:+78123274236">+7 (812) 327-42-36</a>
+            <p class="footer__contacts-row footer__contacts-row--x4">Дизайн сайта: <a class="link" href="https://x4.digital" target="_blank">x4.digital</a></p>
+            <p class="footer__contacts-row footer__contacts-row--x4">Разработка: <a class="link" href="https://articm.ru" target="_blank">articm.ru</a></p>
         </div>
     </div>
 </footer>
 
-<script src="js/vendor/jquery/jquery-3.3.1.min.js"></script>
-<script src="js/vendor/lettering/jquery.lettering.js"></script>
-<script src="js/vendor/svg4everybody/svg4everybody.min.js"></script>
-<script src="js/vendor/objectfit-polyfill/ofi.min.js"></script>
-<script src="js/vendor/sticky-kit/sticky-kit.min.js"></script>
-<script src="js/main.js"></script>
+<div class="GM-screen">
+    <div class="GM-message-box">
+        <div class="GM-message-header">
+            <div class="GM-h"></div>
+        </div>
+        <div class="GM-message-body GM-message-footer">
+            <div class="GM-text"></div>
+        </div>
+    </div>
+</div>
 
+<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="/templates/stereoleto/js/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="/templates/stereoleto/js/vendor/lettering/jquery.lettering.js"></script>
+<script src="/templates/stereoleto/js/vendor/svg4everybody/svg4everybody.min.js"></script>
+<script src="/templates/stereoleto/js/vendor/objectfit-polyfill/ofi.min.js"></script>
+<script src="/templates/stereoleto/js/vendor/sticky-kit/sticky-kit.min.js"></script>
+<script src="/templates/stereoleto/js/vendor/slick/slick.min.js"></script>
+<script src="https://spb.kassir.ru/start-frame.js"></script>
+<script src="/templates/stereoleto/js/main.js?v=1555940869"></script>
+<script src="/templates/stereoleto/js/form.js"></script>
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '698300450270708');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=698300450270708&ev=PageView&noscript=1"/></noscript>
+<!-- DO NOT MODIFY -->
+
+<!-- End Facebook Pixel Code -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-96797333-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84466256-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-84466256-1');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter36703560 = new Ya.Metrika({
+                    id:36703560,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/36703560" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=OXwhPSvjWa67lAJTbREdLI9EGfVROwjn1SdEPLtnEKkrvkS5vkV961OCqxiHNMnisdvnPXDfd5fOgTAStiNNU/jFmLu4a1D**apm1*ulPxG6cBDpqIB/vBEmyogUVNqCMu0bzraPvkSlrC6AI*9rcc8Tf/eSb6mlUZ9T*ocvqPo-';</script>
 </body>
 </html>

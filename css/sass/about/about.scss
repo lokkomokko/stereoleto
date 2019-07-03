@@ -116,6 +116,19 @@
   }
 }
 
+.place-block {
+  .about-old-item__img {
+    border-radius: 13px !important;
+    height: 8vw;
+    max-height: 153px;
+    img {
+      object-fit: contain;
+      object-position: center;
+      background: #fff;
+    }
+  }
+}
+
 @media screen and (max-width: 1660px) {
   .about-top {
     margin-left: 0;
@@ -164,6 +177,7 @@
   .container > .about-old .about-old-item__img {
     height: 28vw;
   }
+
 }
 @media screen and (max-width: 960px) {
   .about-old-item {

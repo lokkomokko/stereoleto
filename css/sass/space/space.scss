@@ -83,6 +83,9 @@
     margin-left: -15px;
     margin-right: -15px;
   }
+  .place-block .about-old-item__img {
+    height: 13vw !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -124,6 +127,9 @@
   }
   .space-partners .about-old-item {
     width: calc(100% / 3 - 30px);
+  }
+  .place-block .about-old-item__img {
+    height: 27vw !important;
   }
 }
 @media screen and (max-width: 500px) {
